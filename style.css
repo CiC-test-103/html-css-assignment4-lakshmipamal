@@ -48,6 +48,244 @@ h1, h2, h3, h4, h5, h6 {
 
 /** Your CSS Below **/
 
+body {
+  background-color: var(--clr-paleBlue);
+}
+
+.content {
+  display: flexbox;
+  float: left;
+  margin: 25%;
+  height: 100%;
+  width: 50%;
+  background-color: white;
+  border-radius: 20px;
+  
+}
+
+.result {
+  position: relative;
+  display: flexbox;
+  float: left;
+  margin: auto;
+  height: 50vh;
+  width: 50%;
+  background-image: linear-gradient(var( --gra-lightSlateBlue), var(--gra-lightRoyalBlue));
+  border-radius: 20px;
+  padding: 3%;
+}
+
+.summary {
+  position: relative;
+  float: right;
+  text-align: justify;
+  display: flexbox;
+  width:50%;
+  border-radius: 20px;
+  padding: 3%;
+}
+
+h1 {
+  font-family: var(--fs-base);
+  text-align: center;
+  color: var(--clr-paleBlue);
+  font-weight: var(--fw-regular);
+  font-size: 16px;
+}
+
+.circle {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  position: relative;
+  text-align: center;
+  padding: 5%;
+  font-family:var(--fs-base);
+  border-radius: 50%;
+  background-image: linear-gradient(var(--gra-violetBlue), transparent);
+  width: 125px;
+  z-index: 11;
+  height: 125px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 15%;
+  margin-bottom: 2%;
+  font-weight: var(--fw-regular);
+  font-family: var(--fs-base);
+  color: white;
+}
+
+p {
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 5%;
+  font-family: var(--fs-base);
+  color: var(--clr-paleBlue);
+  font-size: 16px;
+}
+
+.score {
+  font-weight: var(--fw-black);
+  font-size: 48px;
+  margin-top: 1%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.total {
+  color: var(--clr-lightLavender);
+  position: relative;
+  margin-top: -10%;
+  font-family: var(--fs-base);
+  font-weight: var(--fw-bold);
+}
+
+button {
+  background-color: var(--clr-darkGrayBlue);
+  width: 100%;
+  margin: auto;
+  border-radius: 20px;
+  border: none;
+  font-family: var(--fs-base);
+  color: white;
+  padding: 3%;
+
+}
+
+button:hover{
+  background-color: var(--gra-lightRoyalBlue);
+  cursor: pointer;
+}
+
+.sumtitle {
+  font-family: var(--fs-base);
+  font-weight: var(--fw-bold);
+  padding: 2%;
+  
+}
+
+ul li span {
+  position: absolute;
+  top: 5px;
+}
+
+img.icon{
+  display: inline;
+  /*border: thin solid;*/
+  position: relative;
+  background-color: none;
+  top: 5px;
+  z-index: 1232;
+}
+
+.reaction{
+  background-color: hsla(0, 100%, 67%, 0.2);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-family: var(--fs-base);
+  padding: 3%;
+}
+
+.reaction span{
+  color: var(--clr-lightRed)
+}
+
+
+.memory{
+  background-color: hsla(39, 100%, 56%, 0.2);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: var(--fs-base);
+  padding: 3%;
+}
+
+.memory span {
+  color: var(--clr-orangeYellow);
+}
+
+.verbal{
+  background-color: hsla(166, 100%, 3%, 0.1);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: var(--fs-base);
+  padding: 3%;
+}
+
+.verbal span {
+  color: var(--clr-greenTeal);
+}
+
+.visual{
+  background-color: hsla(234, 85%, 45%, 0.15) ;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: var(--fs-base);
+  padding: 3%;
+}
+
+.visual span {
+  color: var(--clr-cobaltBlue);
+}
+
+.grade {
+  justify-self: right;
+  float: right;
+  position: relative;
+  top: 4px;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+b {
+  color: black;
+}
+
+span.gray {
+  color: gray;
+}
+
+
+@media screen and (max-width: 375px) {
+
+  .content{
+    float: none;
+    display: block;
+    margin-top: 0px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .result{
+    float: none;
+    display: block;
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+  }
+
+  .circle{
+    float: none;
+    display: block;
+  }
+
+  .summary {
+    float: none;
+    display: block;
+    width: 100%;
+    height: 50%;
+  }
+
+}
+
+
 /** Attribution CSS **/
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
